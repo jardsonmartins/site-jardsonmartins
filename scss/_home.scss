@@ -108,3 +108,33 @@
         }
     }
 }
+
+.performance{
+    height: 535px;
+    width: 100%;
+    background: url('../img/background-performance.jpg') center center no-repeat;
+    display: flex;
+    align-items: center;
+    .container{
+        display: flex;
+        justify-content: end;
+        .text{
+            margin-right: 130px;
+            h2{
+                max-width: 415px;
+                margin-bottom: 8px;
+                span{
+                    font-family: 'Exo 2';
+                    font-weight: 700;
+                    font-size: 35px;
+                    line-height: 120%;
+                    color: $pink;
+                }
+            }
+            p{
+                max-width: 475px;
+                margin-bottom: 18px;
+            }
+        }
+    }
+}
