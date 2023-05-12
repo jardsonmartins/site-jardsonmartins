@@ -1,0 +1,56 @@
+.hero{
+    background: url('../img/banner.svg');
+    height: 700px;
+    .container{
+        .text{
+            padding-top: 230px;
+
+            .title{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 14px;
+                color: $pink;
+                
+                img{
+                    margin-right: 8px;
+                }
+            }
+            h1{
+                max-width: 502px;
+                margin-bottom: 8px;
+
+                span{
+                    font-family: 'Exo 2';
+                    color: $pink;
+                }
+            }
+            p{
+                max-width: 474px;
+                color: $white;
+                margin-bottom: 18px;
+            }
+        }
+    }
+}
+
+.portfolio{
+    .container{
+        .top{
+            padding-top: 55px;
+            display: flex;
+            justify-content: space-between;
+
+            h2{
+                max-width: 393px;
+            }
+            .text-left{
+                max-width: 384px;
+                margin-right: 208px;
+            }
+        }
+        .gallery{
+            margin-top: 48px;
+        }
+    }
+}
