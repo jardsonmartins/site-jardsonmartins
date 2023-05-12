@@ -138,3 +138,58 @@
         }
     }
 }
+
+.forWho{
+    .container{
+        .top{
+            display: flex;
+            justify-content: center;
+            padding: 80px 0 40px 0;
+            h2{
+                max-width: 300px;
+                text-align: center;
+                span{
+                    font-family: 'Exo 2';
+                    font-weight: 700;
+                    font-size: 35px;
+                    line-height: 120%;
+                    color: $pink;
+                }
+            }
+        }
+        .bottom{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-bottom: 80px;
+            
+            .card{
+                width: 385px;
+                height: 273px;
+                background-color: #120520;
+                border-radius: 10px;
+                padding: 30px 35px;
+                border: 1px solid $black;
+                transition: 0.3s;
+
+                &:hover{
+                    border: 1px solid #333333;
+                }
+                 .icon{
+                    width: 50px;
+                    min-width: 50px;
+                    height: 50px;
+                    background-color: $pink;
+                    border-radius: 8px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 15px;
+                 }
+                 h4{
+                    margin-bottom: 8px;
+                 }
+            }
+        }
+    }
+}
