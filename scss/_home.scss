@@ -238,3 +238,27 @@
         }
     }
 }
+
+.depositions{
+    .container{
+        .top{
+            padding-top: 70px;
+            text-align: center;
+            h3{
+                color: $pink;
+            }
+        }
+        .bottom{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 46px 0 100px 0;
+            .card{
+                max-width: 384px;
+                p{
+                    margin: 18px 0;
+                }
+            }
+        }
+    }
+}
