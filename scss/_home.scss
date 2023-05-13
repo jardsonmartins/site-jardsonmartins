@@ -381,3 +381,58 @@
         }
     }
 }
+
+.contact{
+    height: 592px;
+    width: 100%;
+    background: linear-gradient(54.62deg, #F44D4F -0.85%, #FC386F 102.31%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .container{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .items{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            .item{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                background: rgba(255, 255, 255, 0.1);
+                border: 1px solid rgba(255, 255, 255, 0.7);
+                border-radius: 30px;
+                padding: 6px 18px;
+                img{
+                    margin-right: 8px;
+                }
+                &:not(:first-child){
+                    margin-left: 15px;
+                }
+            }
+        }
+        h2{
+            font-family: 'Exo 2';
+            font-weight: 700;
+            font-size: 45px;
+            line-height: 100%;
+            max-width: 454px;
+            margin-top: 22px;
+        }
+        .btn{
+            margin-top: 20px;
+            background: $black;
+            transition-duration: 0.5s;
+
+            &:hover{
+                background: $white;
+                color: $pink;
+                transition-duration: 0.3s;
+            }
+        }
+    }
+}
