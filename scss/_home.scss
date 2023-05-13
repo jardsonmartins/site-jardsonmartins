@@ -51,6 +51,50 @@
         }
         .gallery{
             margin-top: 48px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .card{
+                position: relative;
+                margin-bottom: 30px;
+                .info{
+                    position: absolute;
+                    top: 380px;
+                    left: 60px;
+                    .title{
+                        margin-bottom: 6px;
+                    }
+                    h2{
+                        margin-bottom: 15px;
+                    }
+                    .btn{
+                        font-family: 'Inter';
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 180%;
+                        padding: 8px 26px 10px 26px;
+                        background: $black;
+                        border-radius: 30px;
+                        transition-duration: 0.5s;
+
+                        &:hover{
+                            background: $white;
+                            color: $pink;
+                            transition-duration: 0.3s;
+                        }
+                    }
+                }
+                .image{
+                    border-radius: 15px;
+                    width: 100%;
+                    min-width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        .bottom{
+            padding: 10px 0 70px 0;
+            text-align: center;
         }
     }
 }
