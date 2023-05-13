@@ -1,0 +1,60 @@
+footer{
+    .container{
+        .top{
+            padding: 80px 0 45px 0;
+            display: flex;
+            justify-content: space-between;
+            .logo{
+                max-width: 220px;
+                p{
+                    margin-top: 15px;
+                    line-height: 180%;
+                }
+            }
+            .platform, .contacts{
+                h5{
+                    color: $pink;
+                }
+                ul{
+                    li{
+                        margin-top: 10px;
+                        a{
+                            font-family: 'Inter';
+                            font-weight: 400;
+                            font-size: 15px;
+                            color: $white;
+                            &:hover{
+                                color: $pink;
+                            }
+                            i{
+                                margin-right: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .bottom{
+            border-top: 1px solid #565656;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            ul{
+                display: flex;
+                flex-direction: row;
+                li{
+                    &:not(:first-child){
+                        margin-left: 20px;
+                    }
+                    a{
+                        color: $white;
+                        font-size: 14px;
+                        &:hover{
+                            color: $pink;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
