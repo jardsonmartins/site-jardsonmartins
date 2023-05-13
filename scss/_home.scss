@@ -329,3 +329,55 @@
         }
     }
 }
+
+.faq{
+    padding: 95px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .container{
+        .text{
+            text-align: center;
+            span{
+                font-family: 'Exo 2';
+                font-weight: 700;
+                font-size: 35px;
+                color: $pink;
+            }
+        }
+        .content{
+            padding-top: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            details{
+                width: 800px;
+                height: auto;
+                padding: 25px 45px;
+                background-color: #231B2C;
+                border-radius: 8px;
+                &:not(:first-child){
+                    margin-top: 25px;
+                }
+
+                summary{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+                p{
+                    margin-top: 10px;
+                }
+            }
+            details[open]{
+                img{
+                    transform: rotate(180deg);
+                    transition: transform 0.3s;
+                }
+            }
+        }
+    }
+}
