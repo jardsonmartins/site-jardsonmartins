@@ -474,6 +474,20 @@
             }
         }
     }
+    @media (max-width: 576px){
+        .container{
+            .bottom{
+                .card{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    height: auto;
+                }
+                
+            }
+        }
+    }
 }
 
 .customers{
@@ -587,12 +601,20 @@
     @media(max-width: 576px){
         .container{
             .bottom{
+                text-align: center;
+                .card{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
                 .item01, .item02, .item03{
                     width: 100%;
                     margin: 30px 0 0 0;
                 }
                 .item03{
-                    display: block;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
                 }
             }
         }
@@ -667,6 +689,42 @@
             }
         }
     }
+    @media(max-width: 1050px){
+        height: auto;
+        text-align: center;
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .content{
+                margin: 20px 0 0 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .description{
+                    margin-top: 10px;
+                }
+                .items{
+                    margin-top: 40px;
+                    display: flex;
+                    flex-direction: row;
+                    .left, .right{
+                        .item{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            .icon{
+                                margin-bottom: 15px;
+                            }
+                        }
+                    }
+                    .left{
+                        margin: 0 20px 0 0;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .faq{
@@ -715,6 +773,15 @@
                 img{
                     transform: rotate(180deg);
                     transition: transform 0.3s;
+                }
+            }
+        }
+    }
+    @media (max-width: 991px){
+        .container{
+            .content{
+                details{
+                    width: 100%;
                 }
             }
         }

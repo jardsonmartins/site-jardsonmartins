@@ -57,4 +57,42 @@ footer{
             }
         }
     }
+    @media(max-width: 700px){
+        .container{
+            .top{
+                flex-wrap: wrap;
+                .contacts{
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    @media(max-width: 576px){
+        .container{
+            text-align: center;
+            .top{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .logo{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .platform, .contacts{
+                    margin-top: 20px;
+                }
+            }
+            .bottom{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                ul{
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
 }
