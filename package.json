@@ -1,5 +1,5 @@
 {
-  "name": "devboost-setup-basic",
+  "name": "Jardson Martins",
   "version": "1.0.0",
   "description": "This is a basic setup for you to start your projects with sass",
   "main": "index.html",
@@ -8,19 +8,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/devboost-education/devboost-setup-basic.git"
+    "url": "https://github.com/jardsonmartins/site-jardsonmartins"
   },
   "keywords": [
-    "devboost",
+    "jardson",
     "setup",
     "basic"
   ],
-  "author": "DevBoost",
+  "author": "Jardson Martins",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/devboost-education/devboost-setup-basic/issues"
+    "url": "https://github.com/jardsonmartins/site-jardsonmartins/issues"
   },
-  "homepage": "https://github.com/devboost-education/devboost-setup-basic#readme",
+  "homepage": "https://github.com/jardsonmartins",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.0",
     "aos": "^2.3.4"
