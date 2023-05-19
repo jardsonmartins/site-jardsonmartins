@@ -503,47 +503,41 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            padding-top: 50px;
+            align-items: center;
+            padding-bottom: 70px;
 
+            h5{
+                margin-bottom: 20px;
+            }
             .arrows{
                 display: flex;
                 flex-direction: row;
 
-                .arrowLeft, .arrowRight{
+                .swiper-button-next, .swiper-button-prev{
+                    position: static;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-
                     width: 34px;
                     height: 34px;
                     background: #FC386F;
                     border-radius: 2px;
+                    &:not(:first-child){
+                        margin-left: 13px;
+                    }
                 }
-                .arrowLeft{
-                    margin-right: 13px;
+                .swiper-button-next::after, .swiper-button-prev::after{
+                    content: none;
                 }
+                
             }
         }
-        .bottom{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            padding: 70px 0 85px 0;
-
-            img:hover{
-                opacity: 0.8;
-                transition: 0.3s;
-            }
-        }
-    }
-    @media(max-width: 991px){
-        height: auto;
-        .container{
-            .bottom{
-                justify-content: center;
-                flex-wrap: wrap;
-                img{
-                    margin: 15px 20px;
+        .slide-customers{
+            overflow: hidden;
+            .swiper-wrapper{
+                .swiper-slide{
+                    display: flex;
+                    justify-content: center;
                 }
             }
         }
