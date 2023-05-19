@@ -20,3 +20,12 @@ var swiper = new Swiper(".slide-customers", {
         prevEl: '.customers .container .top .arrows .swiper-button-prev',
     },
 });
+
+var swiper = new Swiper(".slide-depositions", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+});
