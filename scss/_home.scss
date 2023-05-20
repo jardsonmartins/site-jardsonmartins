@@ -247,6 +247,8 @@
             }
             .image{
                 img{
+                    width: 696px;
+                    height: 403px;
                     border-radius: 10px;
                 }
             }
@@ -540,6 +542,15 @@
                 .swiper-slide{
                     display: flex;
                     justify-content: center;
+
+                    img{
+                        width: 130px;
+                        height: auto;
+
+                        &:hover{
+                            opacity: 0.7;
+                        }
+                    }
                 }
             }
         }

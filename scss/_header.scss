@@ -1,15 +1,15 @@
 header{
-    position: absolute;
+    position: fixed;
     top: 0;
-    height: 0;
+    left: 0;
     width: 100%;
-    padding-top: 30px;
+    padding-top: 20px;
     z-index: 1;
 
     .container{
         display: flex;
         justify-content: space-between;
-
+        align-items: center;
         nav{
             display: flex;
             flex-direction: row;
@@ -40,6 +40,36 @@ header{
                 font-weight: 700;
                 font-size: 14px;
                 padding: 12px 25px;
+            }
+        }
+    }
+    &.fixed-menu{
+        background: url('../img/background-menu.svg');
+        padding: 20px 0;
+        box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);
+        .container{
+            nav{
+                ul{
+                    li{
+                        a{
+                            font-family: 'Inter';
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 22px;
+                            color: $white;
+    
+                            &:hover{
+                                color: $pink;
+                            }
+                        }
+                    }
+                }
+                .btn{
+                    font-family: 'Exo 2';
+                    font-weight: 700;
+                    font-size: 14px;
+                    padding: 12px 25px;
+                }
             }
         }
     }
