@@ -57,10 +57,31 @@
     }
 }
 
+.line{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+    background: linear-gradient(89.92deg, #F25149 -1.55%, #FC386F 95.24%);
+    transform: rotate(-2.32deg);
+
+    span{
+        font-family: 'Exo 2';
+        font-weight: 700;
+        font-size: 22px;
+        color: $white;
+        margin: 0 45px 0 45px;
+    }
+    img{
+        width: 22px;
+        height: auto;
+    }
+}
+
 .portfolio{
     .container{
         .top{
-            padding-top: 55px;
+            padding-top: 100px;
             margin-top: 48px;
             display: grid;
             grid-template-columns: 50% 50%;
@@ -82,37 +103,18 @@
             .card{
                 position: relative;
                 margin-bottom: 30px;
-                .info{
-                    position: absolute;
-                    top: 380px;
-                    left: 60px;
-                    .title{
-                        margin-bottom: 6px;
-                    }
-                    h2{
-                        margin-bottom: 15px;
-                    }
-                    .btn{
-                        font-family: 'Inter';
-                        font-weight: 400;
-                        font-size: 14px;
-                        line-height: 180%;
-                        padding: 8px 26px 10px 26px;
-                        background: $black;
-                        border-radius: 30px;
-                        transition-duration: 0.5s;
+                overflow: hidden;
+                border-radius: 15px;
 
-                        &:hover{
-                            background: $white;
-                            color: $pink;
-                            transition-duration: 0.3s;
-                        }
-                    }
-                }
                 .image{
                     border-radius: 15px;
                     width: 100%;
                     height: auto;
+                    transition: transform 0.3s ease;
+
+                    &:hover{
+                        transform: scale(1.1);
+                    }
                 }
             }
         }
@@ -604,7 +606,7 @@
                 }
             }
             .office{
-                color: $white;
+                color: $pink;
                 font-family: 'Inter';
                 font-weight: 700;
                 font-size: 17px;
@@ -612,35 +614,38 @@
             }
             .description{
                 max-width: 510px;
-                color: #9D9AAD;
+                color: $white;
+                span{
+                    font-family: 'Inter';
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 180%;
+                }
             }
-            .items{
+            .social{
+                font-family: 'Exo 2';
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 118%;
+                color: $white;
                 margin-top: 20px;
-                display: flex;
-                flex-direction: row;
-                .left, .right{
-                    .item{
-                        display: flex;
-                        flex-direction: row;
-                        align-items: center;
-                        &:not(:first-child){
-                            margin-top: 20px;
-                        }
-                        .icon{
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            width: 43px;
-                            height: 43px;
-                            border-radius: 50%;
-                            background-color: $pink;
-                            margin-right: 15px;
-                        }
+                span{
+                    font-family: 'Exo 2';
+                    font-weight: 700;
+                }
+            }
+            .icons{
+                margin-top: 25px;
+                a{
+                    color: $white;
+                    font-size: 20px;
+                    &:hover{
+                        color: $pink;
                     }
-                }
-                .left{
-                    margin-right: 45px;
-                }
+                    &:not(:first-child){
+                        margin-left: 25px;
+                    }
+                }          
             }
         }
     }
@@ -658,24 +663,6 @@
                 align-items: center;
                 .description{
                     margin-top: 10px;
-                }
-                .items{
-                    margin-top: 40px;
-                    display: flex;
-                    flex-direction: row;
-                    .left, .right{
-                        .item{
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            .icon{
-                                margin-bottom: 15px;
-                            }
-                        }
-                    }
-                    .left{
-                        margin: 0 20px 0 0;
-                    }
                 }
             }
         }

@@ -29,3 +29,16 @@ var swiper = new Swiper(".slide-depositions", {
       clickable: true,
     },
 });
+
+// Fechar details
+var detailsList = document.querySelectorAll(".faq details");
+
+detailsList.forEach(function(details) {
+  details.addEventListener("click", function() {
+      detailsList.forEach(function(otherDetails) {
+          if (otherDetails !== details) {
+              otherDetails.removeAttribute("open");
+          }
+      });
+  });
+});
