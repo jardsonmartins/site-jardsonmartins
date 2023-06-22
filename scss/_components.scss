@@ -1,7 +1,18 @@
 .card-depositions{
     max-width: 384px;
+    img{
+        width: 56px;
+        height: auto;
+    }
     p{
         margin: 18px 0 10px 0;
+    }
+    @media (max-width: 576px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        text-align: center;
     }
 }
 
