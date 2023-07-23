@@ -10,24 +10,23 @@
                 flex-direction: row;
                 align-items: center;
                 margin-bottom: 14px;
-                color: $pink;
+                color: $primary;
                 
                 img{
                     margin-right: 8px;
                 }
             }
             h1{
-                max-width: 502px;
+                max-width: 668px;
                 margin-bottom: 8px;
 
                 span{
-                    font-family: 'Exo 2';
-                    color: $pink;
+                    font-family: Raleway;
+                    color: $gray;
                 }
             }
             p{
                 max-width: 474px;
-                color: $white;
                 margin-bottom: 18px;
             }
         }
@@ -61,13 +60,14 @@
     flex-direction: row;
     align-items: center;
     height: 60px;
-    background: linear-gradient(89.92deg, #F25149 -1.55%, #FC386F 95.24%);
+    background: linear-gradient(61deg, #B882FA 0%, #7C68FC 100%);
     transform: rotate(-2.32deg);
 
     span{
-        font-family: 'Exo 2';
-        font-weight: 700;
-        font-size: 22px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        letter-spacing: 4px;
+        font-size: 18px;
         color: $white;
         margin: 0 45px 0 45px;
     }
@@ -88,6 +88,9 @@
 
             h2{
                 max-width: 393px;
+                span{
+                    color: $gray;
+                }
             }
             .text-left{
                 max-width: 384px;
@@ -204,7 +207,10 @@
             padding-top: 60px;
 
             h2{
-                max-width: 416px;
+                max-width: 458px;
+                span{
+                    color: $primary;
+                }
             }
             p{
                 max-width: 394px;
@@ -239,7 +245,7 @@
                             width: auto;
                         }
                         &.active{
-                            background-color: $pink;
+                            background-color: $primary;
                         }
                     }
                 }
@@ -360,14 +366,13 @@
         .text{
             margin-right: 130px;
             h2{
-                max-width: 415px;
+                max-width: 457px;
                 margin-bottom: 8px;
                 span{
-                    font-family: 'Exo 2';
-                    font-weight: 700;
+                    font-family: 'Raleway', sans-serif;
                     font-size: 35px;
                     line-height: 120%;
-                    color: $pink;
+                    color: $primary;
                 }
             }
             p{
@@ -403,14 +408,14 @@
             justify-content: center;
             padding: 80px 0 40px 0;
             h2{
-                max-width: 300px;
+                max-width: 338px;
                 text-align: center;
                 span{
-                    font-family: 'Exo 2';
-                    font-weight: 700;
+                    font-family: 'Raleway', sans-serif;
+                    font-weight: 500;
                     font-size: 35px;
                     line-height: 120%;
-                    color: $pink;
+                    color: $gray;
                 }
             }
         }
@@ -423,7 +428,7 @@
             .card{
                 width: 385px;
                 height: 273px;
-                background-color: #120520;
+                background-color: #18171C;
                 border-radius: 10px;
                 padding: 30px 35px;
                 border: 1px solid $black;
@@ -436,7 +441,7 @@
                     width: 50px;
                     min-width: 50px;
                     height: 50px;
-                    background-color: $pink;
+                    background-color: $primary;
                     border-radius: 8px;
                     display: flex;
                     justify-content: center;
@@ -497,9 +502,10 @@
 }
 
 .customers{
+    padding: 50px 0 80px 0;
     height: 280px;
     width: 100%;
-    background: linear-gradient(180deg, #0B0215 0%, #140F1B 100%);
+    background: #18171C;
 
     .container{
         .top{
@@ -523,7 +529,7 @@
                     align-items: center;
                     width: 34px;
                     height: 34px;
-                    background: #FC386F;
+                    background: $primary;
                     border-radius: 2px;
                     &:not(:first-child){
                         margin-left: 13px;
@@ -562,7 +568,7 @@
             padding-top: 70px;
             text-align: center;
             h3{
-                color: $pink;
+                color: $white;
             }
         }
         .slide-depositions{
@@ -575,13 +581,13 @@
                 .swiper-pagination-bullet {
                     width: 10px;
                     height: 10px;
-                    background: $pink;
+                    background: $primary;
                 }
                 .swiper-pagination-bullet-active {
                     width: 20px;
                     height: 10px;
                     border-radius: 10px;
-                    background: $pink;
+                    background: $primary;
                 }
             }
         }
@@ -592,7 +598,7 @@
     height: 453px;
     width: 100%;
     margin-top: 40px;
-    background: linear-gradient(180deg, #15111B -7.16%, #0B0215 107.05%);
+    background: linear-gradient(180deg, #18171C 0%, #09090B 100%);
     .container{
         display: flex;
         flex-direction: row;
@@ -616,7 +622,7 @@
                 }
             }
             .office{
-                color: $pink;
+                color: $primary;
                 font-family: 'Inter';
                 font-weight: 700;
                 font-size: 17px;
@@ -624,7 +630,7 @@
             }
             .description{
                 max-width: 510px;
-                color: $white;
+                color: $gray;
                 span{
                     font-family: 'Inter';
                     font-weight: 700;
@@ -633,15 +639,16 @@
                 }
             }
             .social{
-                font-family: 'Exo 2';
+                font-family: 'Inter';
                 font-weight: 400;
                 font-size: 15px;
                 line-height: 118%;
-                color: $white;
+                color: $gray;
                 margin-top: 20px;
                 span{
                     font-family: 'Exo 2';
                     font-weight: 700;
+                    color: $white;
                 }
             }
             .icons{
@@ -650,7 +657,7 @@
                     color: $white;
                     font-size: 20px;
                     &:hover{
-                        color: $pink;
+                        color: $primary;
                     }
                     &:not(:first-child){
                         margin-left: 25px;
@@ -689,10 +696,10 @@
         .text{
             text-align: center;
             span{
-                font-family: 'Exo 2';
-                font-weight: 700;
+                font-family: Raleway;
+                font-weight: 500;
                 font-size: 35px;
-                color: $pink;
+                color: $primary;
             }
         }
         .content{
@@ -717,7 +724,7 @@
 .contact{
     height: 592px;
     width: 100%;
-    background: linear-gradient(54.62deg, #F44D4F -0.85%, #FC386F 102.31%);
+    background: #18171C;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -735,10 +742,13 @@
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                background: rgba(255, 255, 255, 0.1);
-                border: 1px solid rgba(255, 255, 255, 0.7);
+                background: #18181A;
+                border: 1px solid $primary;
                 border-radius: 30px;
                 padding: 6px 18px;
+                p{
+                    color: $primary;
+                }
                 img{
                     margin-right: 8px;
                 }
@@ -748,21 +758,25 @@
             }
         }
         h2{
-            font-family: 'Exo 2';
-            font-weight: 700;
-            font-size: 45px;
-            line-height: 100%;
-            max-width: 454px;
             margin-top: 22px;
+            max-width: 523px;
+            color: $white;
+            text-align: center;
+            font-family: Raleway;
+            font-size: 45px;
+            font-weight: 500;
+            line-height: 120%;
+            letter-spacing: 2.7px;
         }
         .btn{
             margin-top: 20px;
-            background: $black;
+            background: $white;
+            color: $primary;
             transition-duration: 0.5s;
 
             &:hover{
-                background: $white;
-                color: $pink;
+                background: $primary;
+                color: $white;
                 transition-duration: 0.3s;
             }
         }

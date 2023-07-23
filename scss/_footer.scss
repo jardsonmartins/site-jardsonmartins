@@ -13,7 +13,7 @@ footer{
             }
             .platform, .contacts{
                 h5{
-                    color: $pink;
+                    color: $white;
                 }
                 ul{
                     li{
@@ -22,9 +22,9 @@ footer{
                             font-family: 'Inter';
                             font-weight: 400;
                             font-size: 15px;
-                            color: $white;
+                            color: $gray;
                             &:hover{
-                                color: $pink;
+                                color: $primary;
                             }
                             i{
                                 margin-right: 8px;
@@ -50,7 +50,7 @@ footer{
                         color: $white;
                         font-size: 14px;
                         &:hover{
-                            color: $pink;
+                            color: $primary;
                         }
                     }
                 }
