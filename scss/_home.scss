@@ -1,5 +1,7 @@
 .hero{
-    background: url('../img/banner.svg');
+    background: url('../img/banner.jpg') center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 700px;
     .container{
         .text{
@@ -724,7 +726,9 @@
 .contact{
     height: 592px;
     width: 100%;
-    background: #18171C;
+    background: url('../img/background-contact.jpg') center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
